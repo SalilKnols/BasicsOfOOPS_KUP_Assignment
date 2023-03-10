@@ -1,0 +1,33 @@
+package BasicsOfOOPS_Question3;
+
+class Degree {
+    public void getDegree() {
+        System.out.println("I got a degree");
+    }
+}
+
+class Undergraduate extends Degree {
+    public void getDegree() {
+        System.out.println("I am an Undergraduate");
+    }
+}
+
+class Postgraduate extends Degree {
+    public void getDegree() {
+        System.out.println("I am a Postgraduate");
+    }
+}
+
+public class PrintDegree {
+    public static void main(String[] args) {
+
+        Degree degree = new Degree();
+        degree.getDegree();
+
+        Undergraduate undergrad = new Undergraduate();
+        undergrad.getDegree();
+
+        Postgraduate postgrad = new Postgraduate();
+        postgrad.getDegree();
+    }
+}
